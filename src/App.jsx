@@ -1,9 +1,10 @@
+import Headers from "./components/Headers";
+
 function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-      <h2>ECCOMMERCE</h2>
-    </>
+    <main className="">
+      <Headers />
+    </main>
   );
 }
 
