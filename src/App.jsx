@@ -1,11 +1,8 @@
 import Headers from "./components/Headers";
 import productPrincipal from "../images/image-product-1.jpg";
-import product1 from "../images/image-product-1-thumbnail.jpg";
-import product2 from "../images/image-product-2-thumbnail.jpg";
-import product3 from "../images/image-product-3-thumbnail.jpg";
-import product4 from "../images/image-product-4-thumbnail.jpg";
 import cart from "../images/icon-cart.svg";
 import { useState } from "react";
+import ImageGallery from "./components/Img";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
@@ -26,20 +23,9 @@ function App() {
       <section className="flex w-[1350px] justify-around m-auto pt-15">
         <div>
           <img src={productPrincipal} className="w-[450px] rounded-md" alt="" />
-          <ul className="flex w-[450px] space-x-4 mt-4">
-            <li>
-              <img src={product1} className="rounded-md" alt="" />
-            </li>
-            <li>
-              <img src={product2} className="rounded-md" alt="" />
-            </li>
-            <li>
-              <img src={product3} className="rounded-md" alt="" />
-            </li>
-            <li>
-              <img src={product4} className="rounded-md" alt="" />
-            </li>
-          </ul>
+          <div className=" w-[450px]">
+            <ImageGallery />
+          </div>
         </div>
         <main className="w-[600px] mt-15">
           <p>SNEAKER COMPANY</p>
