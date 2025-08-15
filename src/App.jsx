@@ -5,8 +5,21 @@ import product2 from "../images/image-product-2-thumbnail.jpg";
 import product3 from "../images/image-product-3-thumbnail.jpg";
 import product4 from "../images/image-product-4-thumbnail.jpg";
 import cart from "../images/icon-cart.svg";
+import { useState } from "react";
 
 function App() {
+  const [incrementar, setIncrementar] = useState(0);
+
+  function handleClick() {
+    setIncrementar(incrementar + 1);
+    return incrementar;
+  }
+
+  function click() {
+    setIncrementar((prevState) => prevState - 1);
+    return incrementar;
+  }
+
   return (
     <div className="bg-[hsl(0, 0%, 100%)] w-screen h-screen">
       <Headers />
@@ -47,13 +60,25 @@ function App() {
           <div className="font-bold line-through mb-7">$250.00</div>
           <div className="flex gap-3">
             <div className="flex gap-4 bg-gray-200 w-[100px] rounded-md justify-center items-center">
-              <button className="text-orange-400 font-bold">-</button>
-              <button className="font-bold mt-1">0</button>
-              <button className="text-orange-400 font-bold">+</button>
+              <button
+                onClick={click}
+                className="text-orange-400 font-bold cursor-pointer"
+              >
+                -
+              </button>
+              <button className="font-bold mt-1 cursor-pointer">
+                {incrementar}
+              </button>
+              <button
+                onClick={handleClick}
+                className="text-orange-400 font-bold cursor-pointer"
+              >
+                +
+              </button>
             </div>
             <button className="flex gap-3 bg-amber-500 py-3 justify-center w-[300px] rounded-md">
               <img src={cart} className="w-[15px] h-[15px] mt-0.5" alt="" />
-              <p className="text-black font-bold">Add to cart</p>
+              <p className="text-black font-bold cursor-pointer">Add to cart</p>
             </button>
           </div>
         </main>
