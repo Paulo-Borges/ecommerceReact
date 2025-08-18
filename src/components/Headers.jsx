@@ -4,10 +4,10 @@ import avatar from "../../images/image-avatar.png";
 
 const Headers = () => {
   return (
-    <header className="flex justify-between w-[1440px] max-[1439px]:w-[1100px] items-center py-5 border-b border-gray-300 m-auto ">
+    <header className="flex justify-between w-[1440px] max-[1439px]:w-[1100px]  max-[375px]:w-[340px] items-center py-5 max-[375px]:py-0 border-b max-[375px]:border-none border-gray-300 m-auto ">
       <nav className="flex items-center space-x-8 ">
-        <h1 className="font-bold text-2xl mb-2">sneakers</h1>
-        <ul className="flex space-x-4">
+        <h1 className="font-bold text-2xl mb-2 max-[375px]:mb-0">sneakers</h1>
+        <ul className="flex space-x-4 max-[375px]:hidden">
           <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
             Collections
           </li>

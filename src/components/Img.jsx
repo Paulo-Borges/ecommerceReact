@@ -31,7 +31,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="flex justify-center gap-4 p-8">
+    <div className="flex justify-center gap-4 p-4 max-[375px]:hidden">
       {images.map((image) => (
         <img
           key={image.id}
@@ -42,9 +42,12 @@ const ImageGallery = () => {
             w-25 h-25 cursor-pointer rounded-lg border-4 transition-all duration-300 ease-in-out
             hover:scale-105 hover:opacity-90
             ${
+              // se for
               selectedImageId === image.id
-                ? "scale-110 border-amber-700 opacity-30 shadow-lg"
-                : "border-transparent opacity-80"
+                ? //   faz isso
+                  "scale-110 border-amber-700 opacity-30 shadow-lg"
+                : // se nao faz isso
+                  "border-transparent opacity-80"
             }
           `}
         />
