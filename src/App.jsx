@@ -3,6 +3,7 @@ import productPrincipal from "../images/image-product-1.jpg";
 import cart from "../images/icon-cart.svg";
 import { useState } from "react";
 import ImageGallery from "./components/Img";
+import ImgMobile from "./components/imgMobile";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
@@ -26,9 +27,12 @@ function App() {
       <Headers />
       <section className="flex max-[375px]:flex-col w-[1350px] max-[375px]:w-[375px] justify-around m-auto pt-15 max-[375px]:pt-5">
         <div>
+          <div className="min-[375px]:hidden">
+            <ImgMobile />
+          </div>
           <img
             src={productPrincipal}
-            className="w-[450px] max-[375px]:w-[375px] rounded-md"
+            className="w-[450px] max-[375px]:hidden rounded-md"
             alt=""
           />
           <div className=" w-[450px]">
