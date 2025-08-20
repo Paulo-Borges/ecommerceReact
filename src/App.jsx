@@ -30,11 +30,6 @@ function App() {
           <div className="min-[375px]:hidden">
             <ImgMobile />
           </div>
-          {/* <img
-            src={productPrincipal}
-            className="w-[450px] max-[375px]:hidden rounded-md"
-            alt=""
-          /> */}
           <MainImage />
           <div className=" w-[450px]">
             <ImageGallery />
@@ -79,7 +74,7 @@ function App() {
                 +
               </button>
             </div>
-            <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md">
+            <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
               <img src={cart} className="w-[15px] h-[15px] mt-0.5" alt="" />
               <p className="text-black font-bold cursor-pointer">Add to cart</p>
             </button>
