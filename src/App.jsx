@@ -1,9 +1,9 @@
 import Headers from "./components/Headers";
-import productPrincipal from "../images/image-product-1.jpg";
 import cart from "../images/icon-cart.svg";
 import { useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "./components/imgMobile";
+import MainImage from "./components/MainImage";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
@@ -30,11 +30,12 @@ function App() {
           <div className="min-[375px]:hidden">
             <ImgMobile />
           </div>
-          <img
+          {/* <img
             src={productPrincipal}
             className="w-[450px] max-[375px]:hidden rounded-md"
             alt=""
-          />
+          /> */}
+          <MainImage />
           <div className=" w-[450px]">
             <ImageGallery />
           </div>
