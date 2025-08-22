@@ -2,6 +2,7 @@ import React from "react";
 import cart from "../../images/icon-cart.svg";
 import avatar from "../../images/image-avatar.png";
 import Li from "./Li";
+import Imagens from "./imagens";
 
 const Headers = () => {
   return (
@@ -18,18 +19,10 @@ const Headers = () => {
       </nav>
       <ul className="flex space-x-8">
         <li>
-          <img
-            src={cart}
-            className="w-[15px] hover:w-[20px] h-[15px] hover:h-[20px] mt-1 cursor-pointer"
-            alt=""
-          />
+          <Imagens src={cart} />
         </li>
         <li className="">
-          <img
-            src={avatar}
-            className="w-[25px] h-[25px] cursor-pointer"
-            alt=""
-          />
+          <Imagens src={avatar} className="w-[25px] h-[25px] cursor-pointer" />
         </li>
       </ul>
     </header>

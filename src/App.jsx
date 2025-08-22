@@ -4,6 +4,7 @@ import { useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "./components/imgMobile";
 import MainImage from "./components/MainImage";
+import Imagens from "./components/imagens";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
@@ -75,7 +76,7 @@ function App() {
               </button>
             </div>
             <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
-              <img src={cart} className="w-[15px] h-[15px] mt-0.5" alt="" />
+              <Imagens src={cart} className="w-[15px] h-[15px] mt-0.5" />
               <p className="text-black font-bold cursor-pointer">Add to cart</p>
             </button>
           </div>
