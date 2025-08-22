@@ -1,6 +1,7 @@
 import React from "react";
 import cart from "../../images/icon-cart.svg";
 import avatar from "../../images/image-avatar.png";
+import Li from "./Li";
 
 const Headers = () => {
   return (
@@ -8,21 +9,11 @@ const Headers = () => {
       <nav className="flex items-center space-x-8 ">
         <h1 className="font-bold text-2xl mb-2 max-[375px]:mb-0">sneakers</h1>
         <ul className="flex space-x-4 max-[375px]:hidden">
-          <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
-            Collections
-          </li>
-          <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
-            Men
-          </li>
-          <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
-            Women
-          </li>
-          <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
-            About
-          </li>
-          <li className="text-gray-400 hover:text-gray-400/60 cursor-pointer">
-            Contact
-          </li>
+          <Li>Collections</Li>
+          <Li>Men</Li>
+          <Li>Women</Li>
+          <Li>About</Li>
+          <Li>Contact</Li>
         </ul>
       </nav>
       <ul className="flex space-x-8">
