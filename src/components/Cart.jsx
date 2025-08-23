@@ -1,0 +1,31 @@
+import React from "react";
+import { cartImg } from "../../images/image-product-1-thumbnail.jpg";
+import { deleteCart } from "../../images/icon-delete.svg";
+
+const Cart = () => {
+  return (
+    <section className="shadow shadow-gray-400">
+      <div className="border-b-2 text-gray-500">
+        <h1>Cart</h1>
+      </div>
+      <main className="flex justify-around items-center">
+        <div>
+          <img src={cartImg} alt="imagem 1" />
+        </div>
+        <div>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            $125.00 x 3 <span>$375.00</span>
+          </p>
+        </div>
+        <div>
+          <img src={deleteCart} alt="imagem de deletar" />
+        </div>
+      </main>
+      <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
+        <p className="text-black font-bold cursor-pointer">Checkout</p>
+      </button>
+    </section>
+  );
+};
+export default Cart;
