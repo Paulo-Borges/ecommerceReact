@@ -28,11 +28,11 @@ const Button = (props) => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWidth="2"
+          strokeLinecap="round"
           onClick={props.onClick}
-          stroke-linejoin="round"
-          class="lucide lucide-chevron-right-icon lucide-chevron-right"
+          strokeLinejoin="round"
+          className="lucide lucide-chevron-right-icon lucide-chevron-right"
         >
           <path d="m9 18 6-6-6-6" />
         </svg>

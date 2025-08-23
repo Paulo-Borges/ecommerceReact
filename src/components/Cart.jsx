@@ -1,6 +1,7 @@
 import React from "react";
-import { cartImg } from "../../images/image-product-1-thumbnail.jpg";
-import { deleteCart } from "../../images/icon-delete.svg";
+import Imagens from "./imagens";
+import cartImg from "../../images/image-product-1-thumbnail.jpg";
+import deleteCart from "../../images/icon-delete.svg";
 
 const Cart = () => {
   return (
@@ -10,7 +11,7 @@ const Cart = () => {
       </div>
       <main className="flex justify-around items-center">
         <div>
-          <img src={cartImg} alt="imagem 1" />
+          <Imagens src={cartImg} />
         </div>
         <div>
           <h2>Fall Limited Edition Sneakers</h2>
@@ -19,10 +20,10 @@ const Cart = () => {
           </p>
         </div>
         <div>
-          <img src={deleteCart} alt="imagem de deletar" />
+          <Imagens src={deleteCart} />
         </div>
       </main>
-      <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
+      <button className="flex bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
         <p className="text-black font-bold cursor-pointer">Checkout</p>
       </button>
     </section>

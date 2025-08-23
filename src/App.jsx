@@ -1,10 +1,11 @@
 import Headers from "./components/Headers";
 import cart from "../images/icon-cart.svg";
-import { useState } from "react";
+import { Children, useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "./components/imgMobile";
 import MainImage from "./components/MainImage";
 import Imagens from "./components/imagens";
+import Cart from "./components/Cart";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
@@ -82,6 +83,8 @@ function App() {
           </div>
         </main>
       </section>
+
+      <Cart />
     </div>
   );
 }
