@@ -11,7 +11,7 @@ const Cart = () => {
       </div>
       <main className="flex justify-around items-center">
         <div>
-          <Imagens src={cartImg} />
+          <Imagens src={cartImg} className="w-12 h-12" />
         </div>
         <div>
           <h2>Fall Limited Edition Sneakers</h2>

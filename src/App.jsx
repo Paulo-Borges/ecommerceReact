@@ -1,6 +1,6 @@
 import Headers from "./components/Headers";
 import cart from "../images/icon-cart.svg";
-import { Children, useState } from "react";
+import { useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "./components/imgMobile";
 import MainImage from "./components/MainImage";
@@ -83,7 +83,6 @@ function App() {
           </div>
         </main>
       </section>
-
       <Cart />
     </div>
   );
