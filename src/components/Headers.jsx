@@ -28,7 +28,7 @@ const Headers = (props) => {
         <li>
           <Imagens src={cart} onClick={toggleCart} {...props} />
         </li>
-        <li className="">
+        <li className="bg-transparent hover:bg-amber-400 p-0.5 rounded-3xl">
           <Imagens src={avatar} className="w-[25px] h-[25px] cursor-pointer" />
         </li>
       </ul>

@@ -4,7 +4,7 @@ const Imagens = (props) => {
   return (
     <div>
       <img
-        className="w-[15px] hover:w-[20px] h-[15px] hover:h-[20px] mt-1 cursor-pointer"
+        className="w-[15px] h-[15px]  mt-1 cursor-pointer hover:h-[20px]"
         {...props}
       />
     </div>
