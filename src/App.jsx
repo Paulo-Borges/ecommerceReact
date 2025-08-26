@@ -16,7 +16,8 @@ function App() {
     return incrementar;
   }
 
-  const toggleCart = () => {
+  const toggleCart = (event) => {
+    event.preventDefault();
     setCartOpen(!cartOpen);
   };
 
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className="bg-[hsl(0, 0%, 100%)] w-screen h-screen">
-      <Headers />
+      <Headers onClick={toggleCart} />
       <section className="flex max-[375px]:flex-col w-[1350px] max-[375px]:w-[375px] justify-around m-auto pt-15 max-[375px]:pt-5">
         <div>
           <div className="min-[375px]:hidden">
