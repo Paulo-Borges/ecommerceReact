@@ -3,9 +3,9 @@ import Imagens from "./imagens";
 import cartImg from "../../images/image-product-1-thumbnail.jpg";
 import deleteCart from "../../images/icon-delete.svg";
 
-const Cart = () => {
+const Cart = (props) => {
   return (
-    <section className="shadow shadow-gray-400">
+    <section className="shadow shadow-gray-400" {...props}>
       <div className="border-b-2 text-gray-500">
         <h1>Cart</h1>
       </div>

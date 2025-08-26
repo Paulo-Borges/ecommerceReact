@@ -9,11 +9,16 @@ import Cart from "./components/Cart";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
+  const [cartOpen, setCartOpen] = useState("");
 
   function handleClick() {
     setIncrementar(incrementar + 1);
     return incrementar;
   }
+
+  const toggleCart = () => {
+    setCartOpen(!cartOpen);
+  };
 
   function click() {
     setIncrementar((prevState) => {
@@ -76,14 +81,17 @@ function App() {
                 +
               </button>
             </div>
-            <button className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
+            <button
+              className="flex gap-3 bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer"
+              onClick={toggleCart}
+            >
               <Imagens src={cart} className="w-[15px] h-[15px] mt-0.5" />
               <p className="text-black font-bold cursor-pointer">Add to cart</p>
             </button>
           </div>
         </main>
       </section>
-      <Cart />
+      <Cart className={cartOpen ? "block" : "hidden"} />
     </div>
   );
 }
