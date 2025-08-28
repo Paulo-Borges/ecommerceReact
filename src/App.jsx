@@ -6,14 +6,24 @@ import ImgMobile from "../../ecommerceReact/src/components/ImgMobile";
 import MainImage from "../src/components/MainImage";
 import Imagens from "../src/components/Imagens";
 import Cart from "../src/components/Cart";
+import { FiPlus } from "react-icons/fi";
+import { TfiMinus } from "react-icons/tfi";
+
+
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
   const [cartOpen, setCartOpen] = useState("");
+  const [capital, setCapital] = useState(125.00)
 
   function handleClick() {
     setIncrementar(incrementar + 1);
     return incrementar;
+  }
+
+
+  function somar() {
+    setCapital(prevCapital => prevCapital + 125.00)
   }
 
   const toggleCart = (event) => {
@@ -57,12 +67,12 @@ function App() {
           </p>
           <div className="max-[375px]:flex max-[375px]:justify-between max-[375px]:w-[340px] max-[375px]:pl-5">
             <div className="flex items-center gap-4 mb-4">
-              <span className="font-bold text-3xl">$125.00</span>
+              <span className="font-bold text-3xl">$ 150.00</span>
               <span className="bg-black text-white text-sm py-1 px-2 rounded-md">
                 50%
               </span>
             </div>
-            <div className="font-bold line-through mb-7">$250.00</div>
+            <div className="font-bold line-through mb-7">$ {capital.toFixed(2)}</div>
           </div>
           <div className="flex gap-3 max-[375px]:flex-col max-[375px]:pl-5">
             <div className="flex gap-4 max-[375px]:gap-28 bg-gray-200 w-[100px] max-[375px]:w-full rounded-md justify-center items-center cursor-pointer">
@@ -70,7 +80,7 @@ function App() {
                 onClick={click}
                 className="text-orange-400 font-bold cursor-pointer"
               >
-                -
+                <TfiMinus />
               </button>
               <button className="font-bold mt-1 cursor-pointer">
                 {incrementar}
@@ -79,7 +89,8 @@ function App() {
                 onClick={handleClick}
                 className="text-orange-400 font-bold cursor-pointer"
               >
-                +
+                <FiPlus  onClick={somar} />
+                
               </button>
             </div>
             <button
