@@ -1,11 +1,11 @@
-import Headers from "./components/Headers";
+import Headers from "../src/components/Headers";
 import cart from "../images/icon-cart.svg";
 import { useState } from "react";
 import ImageGallery from "./components/Img";
-import ImgMobile from "./components/imgMobile";
-import MainImage from "./components/MainImage";
-import Imagens from "./components/imagens";
-import Cart from "./components/Cart";
+import ImgMobile from "../../ecommerceReact/src/components/ImgMobile";
+import MainImage from "../src/components/MainImage";
+import Imagens from "../src/components/Imagens";
+import Cart from "../src/components/Cart";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
