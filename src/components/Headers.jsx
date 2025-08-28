@@ -1,8 +1,8 @@
 import React from "react";
 import cart from "../../images/icon-cart.svg";
 import avatar from "../../images/image-avatar.png";
-import Li from "./Li";
-import Imagens from "./imagens";
+import Li from "../components/Li";
+import Imagens from "../components/Imagens";
 import { useState } from "react";
 
 const Headers = (props) => {
@@ -24,11 +24,11 @@ const Headers = (props) => {
           <Li>Contact</Li>
         </ul>
       </nav>
-      <ul className="flex space-x-8 min-[375px]:mb-8">
+      <ul className="flex space-x-8 min-[375px]:mb-8 max-[375px]:mt-3">
         <li>
           <Imagens src={cart} onClick={toggleCart} {...props} />
         </li>
-        <li className="bg-transparent hover:bg-amber-400 p-0.5 rounded-3xl">
+        <li className="bg-transparent hover:bg-amber-400 p-0 rounded-3xl">
           <Imagens src={avatar} className="w-[25px] h-[25px] cursor-pointer" />
         </li>
       </ul>
