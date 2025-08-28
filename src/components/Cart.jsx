@@ -1,18 +1,19 @@
 import React from "react";
-import Imagens from "./imagens";
+import Imagens from "../components/Imagens";
 import cartImg from "../../images/image-product-1-thumbnail.jpg";
 import deleteCart from "../../images/icon-delete.svg";
-// import { useState } from "react";
+import { useState } from "react";
 
 const Cart = (props) => {
-  // const [apagar, setApagar] = useState();
+  const [isOpen, setIsOpen] = useState(true);
 
   function handleDelete() {
-    // const apagaCart = apagar === "hidden";
-    // setApagar(apagaCart);
+    setIsOpen(!isOpen)
   }
 
   return (
+    <>
+    {isOpen && 
     <section className="shadow shadow-gray-400" {...props}>
       <div className="bg-white absolute top-20 right-50 shadow-xl/30 shadow-gray-400 rounded-md p-5">
         <div className="border-b-2 text-gray-300/20">
@@ -37,6 +38,8 @@ const Cart = (props) => {
         </button>
       </div>
     </section>
-  );
+  };
+  </>
+);
 };
 export default Cart;
