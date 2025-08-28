@@ -2,11 +2,19 @@ import React from "react";
 import Imagens from "./imagens";
 import cartImg from "../../images/image-product-1-thumbnail.jpg";
 import deleteCart from "../../images/icon-delete.svg";
+// import { useState } from "react";
 
 const Cart = (props) => {
+  // const [apagar, setApagar] = useState();
+
+  function handleDelete() {
+    // const apagaCart = apagar === "hidden";
+    // setApagar(apagaCart);
+  }
+
   return (
     <section className="shadow shadow-gray-400" {...props}>
-      <div className=" bg-white absolute top-20 right-50 shadow-xl/30 shadow-gray-400 rounded-md p-5">
+      <div className="bg-white absolute top-20 right-50 shadow-xl/30 shadow-gray-400 rounded-md p-5">
         <div className="border-b-2 text-gray-300/20">
           <h1 className="mb-5 text-black font-bold">Cart</h1>
         </div>
@@ -20,7 +28,7 @@ const Cart = (props) => {
               $125.00 x 3 <span className="font-bold text-black">$375.00</span>
             </p>
           </div>
-          <div>
+          <div className="" onClick={handleDelete}>
             <Imagens src={deleteCart} />
           </div>
         </main>
