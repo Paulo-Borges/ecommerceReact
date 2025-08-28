@@ -65,7 +65,7 @@ function App() {
             <div className="font-bold line-through mb-7">$250.00</div>
           </div>
           <div className="flex gap-3 max-[375px]:flex-col max-[375px]:pl-5">
-            <div className="flex gap-4 bg-gray-200 w-[100px] max-[375px]:w-full rounded-md justify-center items-center cursor-pointer">
+            <div className="flex gap-4 max-[375px]:gap-28 bg-gray-200 w-[100px] max-[375px]:w-full rounded-md justify-center items-center cursor-pointer">
               <button
                 onClick={click}
                 className="text-orange-400 font-bold cursor-pointer"

@@ -15,7 +15,7 @@ const Cart = (props) => {
     <>
     {isOpen && 
     <section className="shadow shadow-gray-400" {...props}>
-      <div className="bg-white absolute top-20 right-50 shadow-xl/30 shadow-gray-400 rounded-md p-5">
+      <div className="bg-white absolute top-20 max-[375px]:top-12 right-50 max-[375px]:right-0 shadow-xl/30 shadow-gray-400 rounded-md p-5">
         <div className="border-b-2 text-gray-300/20">
           <h1 className="mb-5 text-black font-bold">Cart</h1>
         </div>
