@@ -5,11 +5,16 @@ import deleteCart from "../../images/icon-delete.svg";
 // import { useState } from "react";
 
 const Cart = (props) => {
-  // const [apagar, setApagar] = useState();
+  const [isVisible, setIsVisible] = useState(true);
 
   function handleDelete() {
-    // const apagaCart = apagar === "hidden";
-    // setApagar(apagaCart);
+    setIsVisible(false);
+    // const apagaCart = isVisible === "hidden";
+    // setIsVisible(apagaCart);
+    console.log("clicouuuuuu!");
+    if (!isVisible) {
+      return null;
+    }
   }
 
   return (
