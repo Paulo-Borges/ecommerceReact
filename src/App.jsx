@@ -67,7 +67,7 @@ function App() {
           </p>
           <div className="max-[375px]:flex max-[375px]:justify-between max-[375px]:w-[340px] max-[375px]:pl-5">
             <div className="flex items-center gap-4 mb-4">
-              <span className="font-bold text-3xl">$ 150.00</span>
+              <span className="font-bold text-3xl">$ 125.00</span>
               <span className="bg-black text-white text-sm py-1 px-2 rounded-md">
                 50%
               </span>
