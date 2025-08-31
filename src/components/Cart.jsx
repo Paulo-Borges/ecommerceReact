@@ -26,8 +26,8 @@ const Cart = (props) => {
               <div>
                 <h2 className="text-gray-400">Fall Limited Edition Sneakers</h2>
                 <p className="text-gray-400">
-                  $125.00 x 3{" "}
-                  <span className="font-bold text-black">$375.00</span>
+                  $125.00 x 3
+                  <span className="font-bold text-black pl-5">$375.00</span>
                 </p>
               </div>
               <div className="" onClick={handleDelete}>
