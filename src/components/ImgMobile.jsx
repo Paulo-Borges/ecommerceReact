@@ -36,7 +36,7 @@ const ImgMobile = () => {
   };
 
   return (
-    <div className="w-[375px]">
+    <div className="w-[355px]">
       <img
         key={images[currentImageIndex].id}
         src={images[currentImageIndex].src}

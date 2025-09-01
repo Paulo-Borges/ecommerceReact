@@ -12,7 +12,7 @@ const Cart = (props) => {
   }
 
   return (
-    <>
+    <div className="max-[375px]:w-[365px]">
       {isOpen && (
         <section className="shadow shadow-gray-400" {...props}>
           <div className="bg-white absolute top-20 max-[375px]:top-12 right-50 max-[375px]:right-0 shadow-xl/30 shadow-gray-400 rounded-md p-5">
@@ -40,8 +40,7 @@ const Cart = (props) => {
           </div>
         </section>
       )}
-      ;
-    </>
+    </div>
   );
 };
 export default Cart;

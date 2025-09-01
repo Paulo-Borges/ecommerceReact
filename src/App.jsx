@@ -6,24 +6,30 @@ import ImgMobile from "../../ecommerceReact/src/components/ImgMobile";
 import MainImage from "../src/components/MainImage";
 import Imagens from "../src/components/Imagens";
 import Cart from "../src/components/Cart";
-import { FiPlus } from "react-icons/fi";
-import { TfiMinus } from "react-icons/tfi";
-
-
+import { FaMinus } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
 
 function App() {
   const [incrementar, setIncrementar] = useState(0);
   const [cartOpen, setCartOpen] = useState("");
-  const [capital, setCapital] = useState(125.00)
+  const [capital, setCapital] = useState(125.0);
 
   function handleClick() {
     setIncrementar(incrementar + 1);
     return incrementar;
   }
 
-
   function somar() {
-    setCapital(prevCapital => prevCapital + 125.00)
+    setCapital((prevCapital) => prevCapital + 125.0);
+  }
+
+  function menos() {
+    setCapital((prevCapital) => {
+      if (prevCapital > 125.0) {
+        return prevCapital - 125.0;
+      }
+      return capital;
+    });
   }
 
   const toggleCart = (event) => {
@@ -41,9 +47,9 @@ function App() {
   }
 
   return (
-    <div className="bg-[hsl(0, 0%, 100%)] w-screen h-screen">
+    <div className="bg-[hsl(0, 0%, 100%)] w-screen max-[375px]:w-[355px] h-screen">
       <Headers onClick={toggleCart} className="" />
-      <section className="flex max-[375px]:flex-col w-[1350px] max-[375px]:w-[375px] justify-around m-auto pt-15 max-[375px]:pt-5 ">
+      <section className="flex max-[375px]:flex-col w-[1350px] max-[375px]:w-[355px] justify-around m-auto max-[375px]:mx-0 pt-15 max-[375px]:pt-5 ">
         <div>
           <div className="min-[375px]:hidden">
             <ImgMobile />
@@ -72,7 +78,9 @@ function App() {
                 50%
               </span>
             </div>
-            <div className="font-bold line-through mb-7">$ {capital.toFixed(2)}</div>
+            <div className="font-bold line-through mb-7">
+              $ {capital.toFixed(2)}
+            </div>
           </div>
           <div className="flex gap-3 max-[375px]:flex-col max-[375px]:pl-5">
             <div className="flex gap-4 max-[375px]:gap-28 bg-gray-200 w-[100px] max-[375px]:w-full rounded-md justify-center items-center cursor-pointer">
@@ -80,7 +88,7 @@ function App() {
                 onClick={click}
                 className="text-orange-400 font-bold cursor-pointer"
               >
-                <TfiMinus />
+                <FaMinus onClick={menos} />
               </button>
               <button className="font-bold mt-1 cursor-pointer">
                 {incrementar}
@@ -89,8 +97,7 @@ function App() {
                 onClick={handleClick}
                 className="text-orange-400 font-bold cursor-pointer"
               >
-                <FiPlus  onClick={somar} />
-                
+                <FaPlus onClick={somar} />
               </button>
             </div>
             <button

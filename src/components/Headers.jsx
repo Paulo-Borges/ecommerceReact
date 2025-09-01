@@ -13,7 +13,7 @@ const Headers = (props) => {
   };
 
   return (
-    <header className="flex justify-between w-[1440px] max-[1439px]:w-[1100px]  max-[375px]:w-[340px] items-center pt-4 max-[375px]:py-0 border-b max-[375px]:border-none border-gray-300 m-auto ">
+    <header className="flex justify-between w-[1440px] max-[1439px]:w-[1100px]  max-[375px]:w-[330px] items-center pt-4 max-[375px]:py-0 border-b max-[375px]:border-none border-gray-300 m-auto max-[375px]:mx-3 ">
       <nav className="flex items-center justify-center space-x-8 ">
         <h1 className="font-bold text-2xl mb-8 max-[375px]:mb-0">sneakers</h1>
         <ul className="flex gap-5 pt-2 max-[375px]:hidden">
