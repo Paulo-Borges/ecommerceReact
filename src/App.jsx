@@ -49,8 +49,8 @@ function App() {
   return (
     <div className="bg-[hsl(0, 0%, 100%)] w-screen max-[375px]:w-[355px] h-screen">
       <Headers onClick={toggleCart} className="" />
-      <section className="flex max-[375px]:flex-col w-[1350px] max-[375px]:w-[355px] justify-around m-auto max-[375px]:mx-0 pt-15 max-[375px]:pt-5 ">
-        <div>
+      <section className="flex max-[375px]:flex-col w-[1350px]  max-[375px]:w-[355px] justify-around m-auto max-[375px]:mx-0 pt-15 max-[375px]:pt-5 ">
+        <div className="max-[1114px]:w-[350px] ">
           <div className="min-[375px]:hidden">
             <ImgMobile />
           </div>

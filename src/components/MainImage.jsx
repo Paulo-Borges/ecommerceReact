@@ -39,7 +39,7 @@ const MainImage = () => {
         src={images[replace].src}
         alt={images[replace].alt}
         onClick={nextImgClick}
-        className="w-[450px] max-[375px]:hidden rounded-md cursor-pointer"
+        className="w-[450px] max-[375px]:hidden rounded-md cursor-pointer "
       />
     </div>
   );
