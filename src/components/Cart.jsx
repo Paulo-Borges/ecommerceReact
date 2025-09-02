@@ -2,7 +2,7 @@ import React from "react";
 import Imagens from "../components/Imagens";
 import cartImg from "../../images/image-product-1-thumbnail.jpg";
 import deleteCart from "../../images/icon-delete.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Cart = (props) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -10,6 +10,8 @@ const Cart = (props) => {
   function handleDelete() {
     setIsOpen(!isOpen);
   }
+
+  useEffect(() => {},[isOpen])
 
   return (
     <div className="max-[375px]:w-[365px]">
