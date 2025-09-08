@@ -36,7 +36,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="flex justify-center gap-4 p-4 max-[375px]:hidden max-[1114px]:w-[350px] ">
+    <div className="flex justify-center gap-4 p-4 max-[640px]:hidden max-[1114px]:w-[350px] ">
       {images.map((image) => (
         <img
           key={image.id}

@@ -14,10 +14,10 @@ const Cart = (props) => {
   useEffect(() => {},[isOpen])
 
   return (
-    <div className="max-[375px]:w-[365px]">
+    <div className="max-[640px]:w-[600px]">
       {isOpen && (
         <section className="shadow shadow-gray-400" {...props}>
-          <div className="bg-white absolute top-20 max-[375px]:top-12 right-50 max-[375px]:right-0 shadow-xl/30 shadow-gray-400 rounded-md p-5">
+          <div className="bg-white absolute top-20 max-[375px]:top-12 right-50 max-[640px]:right-0 shadow-xl/30 shadow-gray-400 rounded-md p-5">
             <div className="border-b-2 text-gray-300/20">
               <h1 className="mb-5 text-black font-bold">Cart</h1>
             </div>
@@ -36,7 +36,7 @@ const Cart = (props) => {
                 <Imagens src={deleteCart} />
               </div>
             </main>
-            <button className="flex bg-amber-500 py-3 max-[375px]:py-1 max-[375px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
+            <button className="flex bg-amber-500 py-3 max-[640px]:py-1 max-[640px]:mb-15 justify-center w-[300px] max-[375px]:w-full rounded-md cursor-pointer">
               <p className="text-black font-bold cursor-pointer">Checkout</p>
             </button>
           </div>
