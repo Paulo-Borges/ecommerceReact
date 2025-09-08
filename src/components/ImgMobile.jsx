@@ -1,6 +1,10 @@
 import { useState } from "react";
 import React from "react";
 import Button from "./Button";
+import Imagem1 from "/image-product-1.jpg";
+import Imagem2 from "/image-product-2.jpg"
+import Imagem3 from "/image-product-3.jpg"    
+import Imagem4 from "/image-product-4.jpg"    
 
 const ImgMobile = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -8,22 +12,22 @@ const ImgMobile = () => {
   const images = [
     {
       id: 1,
-      src: "../../images/image-product-1.jpg",
+      src: Imagem1,
       alt: "Imagem 1",
     },
     {
       id: 2,
-      src: "../../images/image-product-2.jpg",
+      src: Imagem2,
       alt: "Imagem 2",
     },
     {
       id: 3,
-      src: "../../images/image-product-3.jpg",
+      src: Imagem3,
       alt: "Imagem 3",
     },
     {
       id: 4,
-      src: "../../images/image-product-4.jpg",
+      src: Imagem4,
       alt: "Imagem 4",
     },
   ];
