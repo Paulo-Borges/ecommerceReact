@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <div className="flex p-4 gap-70 absolute top-50">
+    <div className="flex p-4 gap-130 absolute top-100">
       <button className="bg-amber-50 rounded-4xl">
         <svg
           xmlns="http://www.w3.org/2000/svg"
