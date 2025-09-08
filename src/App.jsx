@@ -1,5 +1,5 @@
 import Headers from "../src/components/Headers";
-import cart from "../images/icon-cart.svg";
+import cart from '/images/icon-cart.svg'
 import { useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "../../ecommerceReact/src/components/ImgMobile";

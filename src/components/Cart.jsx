@@ -1,7 +1,7 @@
 import React from "react";
 import Imagens from "../components/Imagens";
-import cartImg from "../../images/image-product-1-thumbnail.jpg";
-import deleteCart from "../../images/icon-delete.svg";
+import cartImg from "/image-product-1-thumbnail.jpg";
+import deleteCart from "/icon-delete.svg";
 import { useState, useEffect } from "react";
 
 const Cart = (props) => {

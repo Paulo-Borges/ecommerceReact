@@ -1,6 +1,6 @@
 import React from "react";
-import cart from "../../images/icon-cart.svg";
-import avatar from "../../images/image-avatar.png";
+import cart from "/icon-cart.svg";
+import avatar from "/image-avatar.png";
 import Li from "../components/Li";
 import Imagens from "../components/Imagens";
 import { useState } from "react";
