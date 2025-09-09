@@ -1,5 +1,5 @@
 import Headers from "../src/components/Headers";
-import cart from '/icon-cart.svg'
+import cart from "/icon-cart.svg";
 import { useState } from "react";
 import ImageGallery from "./components/Img";
 import ImgMobile from "../../ecommerceReact/src/components/ImgMobile";
@@ -55,7 +55,7 @@ function App() {
             <ImgMobile />
           </div>
           <MainImage />
-          <div className=" w-[640px]">
+          <div className=" w-[450px]">
             <ImageGallery />
           </div>
         </div>
